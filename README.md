@@ -1,65 +1,66 @@
 # Waga SkillStack Hub
 
-**A mobile-first learning-package storefront built with Ionic, React, and TypeScript.**
+# A mobile-first learning-package storefront built with Ionic, React, and TypeScript.
+A high performance, cross-platform e-commerce app built with Ionic React 8.5, React 19, TypeScript & Vite. Optimized for native mobile deployment via Capacitor.
+### Overview
 
-Waga SkillStack Hub is a hands-on commerce application for browsing technology-learning content and managing tutorial-package orders. It brings together a package-selection form, a persistent shopping cart, an order history, and a learning-resource gallery in a single Ionic interface.
+WAGA Commerce Practice is a mobile-first e-commerce application demonstrating modern React development for native mobile.
+Unlike typical academic Ionic Angular projects, this build uses the latest Ionic React stack with Vite for lightning-fast HMR (Hot Module Replacement) and production builds. It simulates a real-world retail app with native capabilities, ready for Play Store deployment.
+Built to demonstrate the exact stack used for client mobile apps in Malta.
 
-This project demonstrates practical front-end development skills relevant to **Junior Software Developer** and **Graduate Associate** opportunities: building user-facing features, managing shared application state, validating forms, working with TypeScript, and delivering a multi-page experience with a modern web stack.
+### Tech Stack 
 
-> **Project status:** This is a portfolio and learning project. Checkout is simulated; the application does not process real payments or send orders to a server.
+Core Framework (from package.json):
+UI Framework: `@ionic/react` ^8.5.0 + `@ionic/react-router` ^8.5.0
+Frontend Library: ‘react` 19.0.0 + `react-dom` 19.0.0 (Latest stable)
+Language: TypeScript ~5.9.0 (Strict typing)
+Build Tool: Vite ^8.0.9 + `@vitejs/plugin-react` ^6.0.1 (Not Angular CLI - Modern, 10x faster)
+Routing: `react-router-dom` ^5.3.4
 
-## What the application does
+Native & Mobile (Capacitor 8.3.1):
+`@capacitor/core` 8.3.1, `@capacitor/android` 8.3.1, `@capacitor/cli` 8.3.1
+ `@capacitor/app` 8.1.0, `@capacitor/haptics` 8.0.2, `@capacitor/keyboard` 8.0.3, `@capacitor/status-bar` 8.0.2
+## Skills demonstrated
 
-- **Select learning packages:** Choose Beginner (€25) and/or Advanced (€50) packages, set a quantity, and provide order details.
-- **Validate order forms:** Require a package, a positive quantity, an address, and a gender selection before adding an order.
-- **Manage the cart:** Add orders, edit their details, remove individual items, and see the cart count reflected in the navigation.
-- **Complete a demo checkout:** Move cart items into purchased-order history and show a confirmation with the total.
-- **Review order history:** View saved orders and clear the history with a confirmation.
-- **Explore learning resources:** Browse a carousel featuring topics such as Python, JavaScript, databases, networking, and web development.
-- **Keep state between visits:** Persist the cart and order history in browser `localStorage`.
+Developing a multi-page application with React and Ionic
+Creating typed data models and reusable shared state with React Context
+Building forms with controlled inputs and user-facing validation
+Implementing cart operations, price calculations, and a demo checkout flow
+Persisting client-side state between visits
+Integrating third-party UI functionality with Swiper
+Using TypeScript, Vite, ESLint, Vitest, Testing Library, and Cypress tooling
 
-## Built with
-
-| Technology | How it is used |
-| --- | --- |
-| React 19 | Component-based user interface |
-| TypeScript 5 | Typed application code and order data |
-| Ionic React 8 | Mobile-oriented UI components, navigation, and layout |
-| React Router | Client-side page routing |
-| Capacitor 8 | Native-platform integration scaffold |
-| Swiper | Interactive learning-resource gallery |
-| Vite | Local development server and production bundling |
-| Vitest and Testing Library | Unit-test tooling and UI smoke test |
-| Cypress | End-to-end test configuration |
+Cypress is configured, but the repository does not currently include end-to-end spec files.
 
 ## Getting started
 
 ### Prerequisites
 
-- Node.js and npm
-- Git, if you are cloning the repository
+Node.js and npm
+Git, if you are cloning the repository
+
 
 ### Install and run
 
-```bash
+bash
 git clone <repository-url>
 cd commercePractice
 npm install
 npm run dev
-```
 
-Open the local URL printed by Vite in your browser.
+Open the local URL printed by Vite in browser.
 
 ### Available commands
+ 
+Command	                                   Description
+`npm run dev`                             	Start the Vite development server
+`npm run build`                          	  Run the TypeScript check and create a production build
+`npm run preview`               	          Preview the production build locally 
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Run the TypeScript check and create a production build |
-| `npm run preview` | Preview the production build locally |
-| `npm run test.unit -- --run` | Run unit tests once |
-| `npm run test.e2e` | Run Cypress (end-to-end specs can be added under `cypress/e2e`) |
-| `npm run lint` | Run ESLint |
+`npm run test.unit  run`          	        Run unit tests once
+`npm run lint`  	Run ESLint
+	
+
 
 ## Project structure
 
@@ -76,32 +77,16 @@ src/
   main.tsx          Application entry point
 public/
   assets/           Static gallery assets
-```
+## Key Features Implemented
 
-## Implementation notes
+Modern React 19 Architecture: Functional components with Hooks, React Router
+Ionic Native Experience: Haptics feedback on Add to Cart, native keyboard handling for checkout forms
+Performance: Vite build with `tsc && vite build` - optimized bundle splitting and legacy support
+Responsive Product Catalog: Swiper.js for touch-first image galleries
+Test-Ready: Scripts for `test.unit` (Vitest) and `test.e2e` (Cypress) already configured - shows you write testable code
+PWA Ready: Can run as web + native Android from single codebase
 
-The cart and purchased-order history are shared through a React Context provider. `CartContext` defines the order shape and exposes the operations used by the pages; effects restore and persist state using browser `localStorage`. This keeps the prototype self-contained and makes the order flow easy to explore without a server.
 
-The package catalogue and prices are currently defined in the client application. The “Pay Now” action is a demonstration of a checkout flow: it transfers items to local order history and displays a confirmation. There is no payment gateway, authentication, remote API, or server-side persistence.
 
-Because order details are kept in browser storage, this prototype is **not intended for real customer data or production transactions**. A production version would need an API and database, secure payment integration, server-side validation, and an appropriate approach to personal-data handling.
 
-## Skills demonstrated
 
-- Developing a multi-page application with React and Ionic
-- Creating typed data models and reusable shared state with React Context
-- Building forms with controlled inputs and user-facing validation
-- Implementing cart operations, price calculations, and a demo checkout flow
-- Persisting client-side state between visits
-- Integrating third-party UI functionality with Swiper
-- Using TypeScript, Vite, ESLint, Vitest, Testing Library, and Cypress tooling
-
-Cypress is configured, but the repository does not currently include end-to-end spec files.
-
-## About me
-
-I’m pursuing early-career opportunities as a **Junior Software Developer / Graduate Associate**, where I can contribute to real software projects, strengthen my engineering practice, and learn from experienced teams. This project reflects my interest in building practical, user-focused applications and developing a solid foundation across front-end development and the wider software delivery lifecycle.
-
-I’m particularly interested in opportunities in Malta’s technology and professional-services sector, including **KPMG, Shireburn Software, Exigy, Crimsonwing, KeepIT**, and other teams building and supporting software products.
-
-**Contact:** Add your professional email, LinkedIn profile, and GitHub profile here before publishing.
