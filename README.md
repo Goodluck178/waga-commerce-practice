@@ -1,3 +1,5 @@
+# Academic Project
+
 # Waga SkillStack Hub
 
 # A mobile-first learning-package storefront built with Ionic, React, and TypeScript.
