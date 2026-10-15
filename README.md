@@ -2,8 +2,6 @@
 
 # Waga SkillStack Hub
 
-# A mobile-first learning-package storefront built with Ionic, React, and TypeScript.
-
 A high performance, cross-platform e-commerce app built with Ionic React 8.5, React 19, TypeScript & Vite. Optimized for native mobile deployment via Capacitor.
 
 ### Project Overview
