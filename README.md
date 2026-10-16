@@ -6,7 +6,7 @@ A high performance, cross-platform e-commerce app built with Ionic React 8.5, Re
 
 ### Project Overview
 
-WAGA Commerce Practice is a mobile-first e-commerce application demonstrating modern React development for native mobile.
+WAGA skillstack hub is a mobile-first e-commerce application demonstrating modern React development for native mobile.
 
 Unlike typical academic Ionic Angular projects, this build uses the latest Ionic React stack with Vite for lightning-fast HMR (Hot Module Replacement) and production builds.
 
@@ -66,7 +66,7 @@ bash
 
 git clone <repository-url>
 
-cd commercePractice
+cd waga-skillstack-hub
 
 npm install
 
