@@ -16,22 +16,27 @@ Built to demonstrate the exact stack used for client mobile apps in Malta.
 
 ### Tech Stack 
 
-Core Framework (from package.json):
+React 
 
-UI Framework: `@ionic/react` ^8.5.0 + `@ionic/react-router` ^8.5.0
+Ionic 
 
-Frontend Library: ‘react` 19.0.0 + `react-dom` 19.0.0 (Latest stable)
+TypeScript
 
-Language: TypeScript ~5.9.0 (Strict typing)
+Capacitor 
 
-Build Tool: Vite ^8.0.9 + `@vitejs/plugin-react` ^6.0.1 (Not Angular CLI - Modern, 10x faster)
+Vite 5
 
-Routing: `react-router-dom` ^5.3.4
+Vitest
 
-Native & Mobile (Capacitor 8.3.1):
-`@capacitor/core` 8.3.1, `@capacitor/android` 8.3.1, `@capacitor/cli` 8.3.1
+Testing Library
 
- `@capacitor/app` 8.1.0, `@capacitor/haptics` 8.0.2, `@capacitor/keyboard` 8.0.3, `@capacitor/status-bar` 8.0.2
+Cypress
+
+ESLint
+
+Browser localStorage
+
+
  
 ## Skills demonstrated
 
@@ -62,57 +67,43 @@ Git, if you are cloning the repository
 
 ### Install and run
 
-bash
-
+```bash
 git clone <repository-url>
-
-cd waga-skillstack-hub
-
+cd commercePractice
 npm install
-
 npm run dev
+```
 
-Open the local URL printed by Vite in browser.
+Open the local URL printed by Vite in your browser.
 
 ### Available commands
- 
-Command	                                   Description
 
-`npm run dev`                             	Start the Vite development server
-
-`npm run build`                          	  Run the TypeScript check and create a production build
-
-`npm run preview`               	          Preview the production build locally 
-
-`npm run test.unit  run`          	        Run unit tests once
-`npm run lint`  	Run ESLint
-	
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Run the TypeScript check and create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run test.unit -- --run` | Run unit tests once |
+| `npm run test.e2e` | Run Cypress (end-to-end specs can be added under `cypress/e2e`) |
+| `npm run lint` | Run ESLint |	
 
 
 ## Project structure
 
-text
-
+```text
 src/
   components/       Shared UI components
   pages/
-  
     Home.tsx        Package selection and add-to-cart flow
-	
     Cart.tsx        Cart editing, removal, and demo checkout
-	
     Dashboard.tsx   Purchased-order history
-	
     Gallery.tsx     Learning-resource carousel
-	
     CartContext.tsx Shared cart and order-history state
-	
   App.tsx           Ionic shell, navigation, and routes
-  
   main.tsx          Application entry point
 public/
   assets/           Static gallery assets
-  
+```  
 ## Key Features Implemented
 
 Modern React 19 Architecture: Functional components with Hooks, React Router
