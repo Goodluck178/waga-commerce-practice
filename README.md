@@ -2,7 +2,7 @@
 
 # Waga SkillStack Hub
 
-A high performance, cross-platform e-commerce app built with Ionic React 8.5, React 19, TypeScript & Vite. Optimized for native mobile deployment via Capacitor.
+A high performance, cross-platform e-commerce app built with Ionic, React, TypeScript and Vite. Optimized for native mobile deployment via Capacitor.
 
 ### Project Overview
 
