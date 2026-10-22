@@ -4,6 +4,12 @@
 
 A high performance, cross-platform e-commerce app built with Ionic, React, TypeScript and Vite. Optimized for native mobile deployment via Capacitor.
 
+### Live Demo
+
+APK download link
+
+https://waga-skillstack.morganugochukwu.com/waga-skillstack-folder/ugo%20apk/wagaskillstack.apk
+
 ### Project Overview
 
 Waga skillstack hub is a mobile-first e-commerce application demonstrating modern React development for native mobile.
