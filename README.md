@@ -10,6 +10,10 @@ APK download link
 
 https://waga-skillstack.morganugochukwu.com/waga-skillstack-folder/ugo%20apk/wagaskillstack.apk
 
+waga-skillstack web app link
+
+https://waga-skillstack.morganugochukwu.com
+
 ### Project Overview
 
 Waga skillstack hub is a mobile-first e-commerce application demonstrating modern React development for native mobile.
